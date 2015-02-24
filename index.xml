@@ -1,0 +1,30 @@
+<craft>
+<parameter name="radius" type="int" default="2.15"/>
+<parameter name="height" type="int" default="0.2"/>
+<script type="text/openjscad">
+    //Main function 
+function main()
+{
+	var radius= params.radius;
+	var height=params.height
+	if( radius<2)
+	radius=2;
+	return cloud(radius,height);
+}
+
+
+//Cloud
+function cloud(radius,height)
+{
+	 var c1= cylinder({r:radius-radius/5, h: height});
+	 var c2= cylinder({r:radius, h: height}).translate([1.8,1.2,0]);
+	 var c3= cylinder({r:radius-radius/9, h: height}).translate([3.5,1.5,0]);
+	 var c4= cylinder({r:radius-radius/7, h: height}).translate([5,1.7,0]);
+	 var c5= cylinder({r:radius-radius/3, h: height}).translate([6.5,1.9,0]);
+	 return union(c1,c2,c3,c4,c5);
+}
+
+
+   </script>
+</craft>
+
