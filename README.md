@@ -11,7 +11,7 @@ Parameterized cloud.
 
 **height:** To adjust height of cloud
 
-##Example:
+## Example:
 
     <craft>
         <craft name="cloud" module="craft-cloud"/>
