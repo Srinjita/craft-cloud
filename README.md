@@ -13,11 +13,13 @@ Parameterized cloud.
 
 ## Example:
 
-    <craft>
-        <craft name="cloud" module="craft-cloud"/>
-           <cloud radius="2.5" height="1"></cloud>
-           <cloud radius="3" height="2"></cloud>
-          <cloud></cloud>
-    </craft>
+```html
+<craft>
+    <craft name="cloud" module="craft-cloud"/>
+    <cloud radius="2.5" height="1"></cloud>
+    <cloud radius="3" height="2"></cloud>
+    <cloud></cloud>
+</craft>
+```
 
 ![example](example.png)
